@@ -1,3 +1,169 @@
+nota = 75
+if nota >= 90:
+    print("A nota é A.")
+elif nota >= 80:
+    print("A nota é B.")
+elif nota >= 70:
+    print("A nota é C.")
+else:
+    print("A nota é D.")
+
+
+frutas = ["maça", "banana", "laranja"]
+for fruta in frutas:
+    print(fruta)
+
+contador = 0
+while contador < 5:
+    print("Contagem:", contador)
+    contador += 1
+
+valor = 1
+while valor <= 100:
+    print("Valor:", valor)
+    valor *= 2
+
+numeros = [1,2,3,4,5,6,7,8,9,10]
+for numero in numeros:
+    if numero % 2 == 0:
+        print(numero, "é par!")
+    else:
+        print(numero, "é ímpar!")
+nome = "Eduardo"
+sobrenome = "Sei"
+mensagem = "Bem-vindos à lógica de programação, \n" +\
+            "o professor " +\
+            nome +\
+            "" +\
+            "\nlhes deseja um bom estudo."
+print(mensagem)
+
+maior_idade = True
+permitir_acesso = False
+
+PI = 3.14159
+TAXA_JUROS = 0.059
+
+soma = 5 + 7
+subtracao = 7 - 5
+multiplicacao = 5 * 7
+divisao = 10 / 5
+resto_divisao = 7 % 3
+potencia = 7 ** 3
+
+variavel_A = 10
+variavel_B = 10
+
+igualdade = variavel_A == variavel_B
+diferenca = variavel_A != variavel_B
+maior = variavel_A > variavel_B
+menor = variavel_A < variavel_B
+maior_igual = variavel_A >= variavel_B
+menor_igual = variavel_A <= variavel_B
+
+
+a = True
+b = False
+
+resultado = a and b
+print(resultado)
+
+resultado = a or b
+print(resultado)
+
+resultado = not a
+print(resultado)
+
+x = True
+y = False
+z = True
+
+resultado = (x and y) or (not z)
+print(resultado)
+
+numeros = [1,2,3,4,5]
+nomes = ["Eduardo", "Luis", "Carol"]
+pi = 3.14
+lista_mista = [1, "Eduardo", pi]
+
+coordenadas = (1,5)
+dados_cadastro = ("Eduardo", 34, \
+                  "eduardo_sei@example.com")
+
+cadastro_usuario = {"nome": "Eduardo", \
+                    "idade": 34, \
+                    "altura": 1.70}
+
+endereco = {"rua": "Rua A", "cidade": \
+            "São Paulo", \
+            "sigla": "SP"}
+
+print(cadastro_usuario)
+print(endereco)
+
+presente_na_lista = 10 in \
+                    [2,4,6,8,10]
+
+nao_presente_na_lista = 11 not in \
+                        [2,4,6,8,10]
+
+print(presente_na_lista)
+print(nao_presente_na_lista)
+
+import array
+primeiro_array = array.array('i', \
+                             [1,2,3,4,5])
+
+print(primeiro_array)
+
+matriz = [[1,2,3],
+          [4,5,6],
+          [7,8,9]]
+
+print(matriz)
+
+lista = [["Arroz", "Feijao", "Salada"],
+         ["Carne", "Frango", "Peixe"],
+         ["Agua", "Suco", "Refrigerante"]]
+
+for linha in lista:
+    print(linha)
+
+primeira_lista = [1,2,3, "abc", True]
+primeira_lista.append(5)
+primeira_lista.remove(1)
+
+print(primeira_lista)
+
+primeiro_dicionario = {"nome": "Eduardo", \
+                       "idade": 34, \
+                        "cidade": "São Paulo"}
+print("Nome:", primeiro_dicionario["nome"])
+print("Idade:", primeiro_dicionario["idade"])
+print("Cidade:", primeiro_dicionario["cidade"])
+
+primeiro_dicionario["Profissao"] = "Professor"
+print(primeiro_dicionario)
+
+pilha = []
+
+pilha.append(1)
+pilha.append(2)
+pilha.append(3)
+
+item_desempilhado - pilha.pop()
+print("Item desempilhado:", item_desempilhado)
+
+item_desempilhado - pilha.pop()
+print("Item desempilhado:", item_desempilhado)
+
+if len(pilha) > 0:
+    topo_da_pilha = pilha[-1]
+    print("Topo da pilha:", topo_da_pilha)
+else:
+    print("A pilha está vazia.")
+
+
 # Orientação a objetos
 class usuario:
   def __init__(self, nome, idade):
