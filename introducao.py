@@ -135,15 +135,15 @@ primeira_lista.remove(1)
 
 print(primeira_lista)
 
-primeiro_dicionario = {"nome": "Eduardo", \
-                       "idade": 34, \
-                        "cidade": "São Paulo"}
-print("Nome:", primeiro_dicionario["nome"])
-print("Idade:", primeiro_dicionario["idade"])
-print("Cidade:", primeiro_dicionario["cidade"])
+# primeiro_dicionario = {"nome": "Eduardo", \
+#                        "idade": 34, \
+#                         "cidade": "São Paulo"}
+# print("Nome:", primeiro_dicionario["nome"])
+# print("Idade:", primeiro_dicionario["idade"])
+# print("Cidade:", primeiro_dicionario["cidade"])
 
-primeiro_dicionario["Profissao"] = "Professor"
-print(primeiro_dicionario)
+# primeiro_dicionario["Profissao"] = "Professor"
+# print(primeiro_dicionario)
 
 pilha = []
 
@@ -151,11 +151,11 @@ pilha.append(1)
 pilha.append(2)
 pilha.append(3)
 
-item_desempilhado - pilha.pop()
-print("Item desempilhado:", item_desempilhado)
+# item_desempilhado - pilha.pop()
+# print("Item desempilhado:", item_desempilhado)
 
-item_desempilhado - pilha.pop()
-print("Item desempilhado:", item_desempilhado)
+# item_desempilhado - pilha.pop()
+# print("Item desempilhado:", item_desempilhado)
 
 if len(pilha) > 0:
     topo_da_pilha = pilha[-1]
@@ -517,3 +517,15 @@ print(raiz)
 from math import * #“*” para indicar que queremos carregar todas as funções e classes presentes em math. 
 expo = exp(5) # e (numero de Euler) elevado a 5
 print(expo)
+
+# Namespace Embutido (ou Built-In): Se refere ao conjunto de nomes que são automaticamente disponíveis em qualquer programa Python. O diferencial deste tipo de namespace é a característica de não precisar importar nomes para implementar suas funções.
+
+#Usando funções built-in
+numero = 42
+print("Numero binario: ", bin(numero))
+print("Numero absoluto: ", abs(numero))
+
+# Usando objetos built-in
+lista = [1,2,3,4,5]
+print("Comprimento da lista: ", len(lista))
+print("Tipo de variavel 'lista': ", type(lista))
